@@ -9,7 +9,9 @@ export default class CommentApp extends Component {
     render() {
         return (
             <div className="wrapper">
-                <CommentInput/>
+                <CommentInput onSubmit={(comment) => {
+                    console.log(comment);
+                }}/>
                 <CommentList/>
             </div>
         );
