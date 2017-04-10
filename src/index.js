@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import CommentApp from './components/CommentApp';
 import './index.css';
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+    <CommentApp />,
+    document.getElementById('root')
 );
