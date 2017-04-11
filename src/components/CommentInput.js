@@ -18,6 +18,15 @@ export default class CommentInput extends Component {
         }
     }
 
+    componentWillMount() {
+        const username = localStorage.getItem('username');
+        if (username) {
+            this.setState({
+                username
+            });
+        }
+    }
+
     componentDidMount() {
         this.textarea.focus();
     }
@@ -29,6 +38,10 @@ export default class CommentInput extends Component {
                     <span className="comment-field-name">用户名：</span>
                     <div className="comment-field-input">
                         <input value={this.state.username}
+                            // 失去焦点
+                               onBlur={(e) => {
+                                   localStorage.setItem('username', e.target.value);
+                               }}
                                onChange={(e) => {
                                    this.setState({
                                        username: e.target.value
