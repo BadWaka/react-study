@@ -69,7 +69,11 @@ export default class CommentInput extends Component {
                         onClick={() => {
                             if (this.props.onSubmit) {
                                 const {username, content} = this.state;
-                                this.props.onSubmit({username, content});
+                                this.props.onSubmit({
+                                    username,
+                                    content,
+                                    createdTime: +new Date(),   // 传入创建时间
+                                });
                             }
                             this.setState({
                                 content: ''
