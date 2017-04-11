@@ -2,8 +2,13 @@
  * Created by waka on 2017/4/10.
  */
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 export default class CommentInput extends Component {
+
+    static propTypes = {
+        onSubmit: PropTypes.func,   // 提交事件
+    }
 
     constructor() {
         super();
@@ -11,6 +16,10 @@ export default class CommentInput extends Component {
             username: '',
             content: ''
         }
+    }
+
+    componentDidMount() {
+        this.textarea.focus();
     }
 
     render() {
@@ -30,12 +39,16 @@ export default class CommentInput extends Component {
                 <div className='comment-field'>
                     <span className='comment-field-name'>评论内容：</span>
                     <div className='comment-field-input'>
-                        <textarea value={this.state.content}
-                                  onChange={(e) => {
-                                      this.setState({
-                                          content: e.target.value
-                                      });
-                                  }}/>
+                        <textarea
+                            ref={(textarea) => {
+                                this.textarea = textarea;
+                            }}
+                            value={this.state.content}
+                            onChange={(e) => {
+                                this.setState({
+                                    content: e.target.value
+                                });
+                            }}/>
                     </div>
                 </div>
                 <div className='comment-field-button'>

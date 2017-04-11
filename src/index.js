@@ -1,23 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import CommentApp from './components/CommentApp';
 import './index.css';
 
-class AutoFocusInput extends Component {
-    componentDidMount() {
-        this.input.focus()
-    }
-
-    render() {
-        return (
-            <input ref={(input) => {
-                this.input = input
-            }}/>
-        )
-    }
-}
-
 ReactDOM.render(
-    <AutoFocusInput />,
+    <CommentApp />,
     document.getElementById('root')
 );
