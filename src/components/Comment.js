@@ -8,6 +8,8 @@ export default class Comment extends Component {
 
     static propTypes = {
         comment: PropTypes.object.isRequired,
+        onDeleteComment: PropTypes.func,
+        index: PropTypes.number,
     };
 
     constructor() {
@@ -22,9 +24,14 @@ export default class Comment extends Component {
         this._timer = setInterval(this._updateTimeString.bind(this), 5000);
     }
 
+    handleDeleteComment() {
+        if (this.props.onDeleteComment) {
+            this.props.onDeleteComment(this.props.index);
+        }
+    }
+
     _updateTimeString() {
         const comment = this.props.comment;
-        console.log('comment', comment);
         const duration = (+Date.now() - comment.createdTime) / 1000;    // 经过时间
         this.setState({
             timeString: duration > 60
@@ -42,6 +49,10 @@ export default class Comment extends Component {
                 <p>&nbsp;{this.props.comment.content}</p>
                 <span className="comment-createdtime">
                     {this.state.timeString}
+                </span>
+                <span className="comment-delete"
+                      onClick={this.handleDeleteComment.bind(this)}>
+                    删除
                 </span>
             </div>
         );
