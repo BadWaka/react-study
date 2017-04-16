@@ -11,6 +11,10 @@ export default class Clock extends Component {
         }
     }
 
+    componentWillMount() {
+
+    }
+
     render() {
         return (
             <div>
