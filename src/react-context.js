@@ -1,33 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
 
 class Index extends Component {
-
-    // 子树的context
-    static childContextTypes = {
-        themeColor: PropTypes.string
-    };
-
-    getChildContext() {
-        return {
-            themeColor: this.state.themeColor
-        }
-    }
-
-    constructor() {
-        super();
-        this.state = {
-            themeColor: 'red'
-        };
-    }
-
-    componentWillMount() {
-        this.setState({
-            themeColor: 'green'
-        })
-    }
-
     render() {
         return (
             <div>
@@ -61,16 +35,9 @@ class Main extends Component {
 }
 
 class Title extends Component {
-
-    static contextTypes = {
-        themeColor: PropTypes.string
-    };
-
     render() {
         return (
-            <h1 style={{
-                color: this.context.themeColor
-            }}>React.js 小书标题</h1>
+            <h1>React.js 小书标题</h1>
         )
     }
 }
