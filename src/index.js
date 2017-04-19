@@ -112,7 +112,7 @@ function reducer(state, action) {
     }
 }
 
-const store = createStore(appState, reducer);
+const store = createStore(reducer);
 let oldState = store.getState();    // 旧state
 store.subscribe(() => {
     const newState = store.getState();  // 数据可能变化，获取新的 state
