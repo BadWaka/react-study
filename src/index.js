@@ -40,24 +40,58 @@ function dispatch(action) {
 }
 
 function createStore(state, stateChanger) {
+    const listeners = [];
+
+    // 订阅
+    const subscribe = (listener) => {
+        listeners.push(listener);
+    };
+
     const getState = () => state;
-    const dispatch = (action) => stateChanger(state, action);
+
+    const dispatch = (action) => {
+        stateChanger(state, action);
+        listeners.forEach((listener) => {
+            listener();
+        });
+    };
+
     return {
         getState,
-        dispatch
+        dispatch,
+        subscribe
     }
 }
 
-renderApp(appState);
+function stateChanger(state, action) {
+    switch (action.type) {
+        case 'UPDATE_TITLE_TEXT':
+            state.title.text = action.text;
+            break;
+        case 'UPDATE_TITLE_COLOR':
+            state.title.color = action.color;
+            break;
+        default:
+            break;
+    }
+}
 
-dispatch({
+const store = createStore(appState, stateChanger);
+store.subscribe(() => {
+    renderApp(store.getState());
+});
+
+// 首次渲染
+renderApp(store.getState());
+
+store.dispatch({
     type: 'UPDATE_TITLE_TEXT',
     text: '《React.js 小书》'
 });
 
-dispatch({
+store.dispatch({
     type: 'UPDATE_TITLE_COLOR',
     color: 'yellow'
 });
 
-renderApp(appState);
+// renderApp(store.getState());
