@@ -11,12 +11,32 @@ export const connect = (mapStateToProps) => (WrappedComponent) => {
         };
 
         // TODO: 如何从store获取数据
+        constructor() {
+            super();
+            this.state = {
+                allProps: {}
+            };
+        }
+
+        componentWillMount() {
+            const {store} = this.context;
+            this._updateProps();
+            store.subscribe(() => this._updateProps());
+        }
+
+        _updateProps() {
+            const {store} = this.context;
+            let stateProps = mapStateToProps(store.getState(), this.props);
+            this.setState({
+                allProps: {
+                    ...stateProps,
+                    ...this.props
+                }
+            });
+        }
 
         render() {
-            const {store} = this.context;
-            let stateProps = mapStateToProps(store.getState());
-            // {...stateProps} 意思是把这个对象里面的属性全部通过 `props` 方式传递进去
-            return <WrappedComponent {...stateProps}/>;
+            return <WrappedComponent {...this.state.allProps}/>;
         }
     }
 
