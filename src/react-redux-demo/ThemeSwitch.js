@@ -36,9 +36,16 @@ const mapStateToProps = (state) => {
         themeColor: state.themeColor
     }
 };
-
 const mapDispatchToProps = (dispatch) => {
-
+    return {
+        onSwitchColor: (color) => {
+            dispatch({
+                type: 'CHANGE_COLOR',
+                themeColor: color
+            });
+        }
+    }
 };
+ThemeSwitch = connect(mapStateToProps, mapDispatchToProps)(ThemeSwitch);
 
 export default ThemeSwitch
