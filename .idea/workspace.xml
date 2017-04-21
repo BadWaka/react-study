@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03419fb6-523b-4f7e-88dd-1d69644bdde0" name="Default" comment="">
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/demo.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react-redux-demo/react-redux.js" afterPath="$PROJECT_DIR$/src/react-redux-demo/react-redux.js" />
+>>>>>>> 6eff0262a8042183f3c961b253c1c3b62e9b329a
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,6 +24,7 @@
   <component name="FavoritesManager">
     <favorites_list name="react-study" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
@@ -99,6 +105,8 @@
       </file>
     </leaf>
   </component>
+=======
+>>>>>>> 6eff0262a8042183f3c961b253c1c3b62e9b329a
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -112,6 +120,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/components/Clock.js" />
         <option value="$PROJECT_DIR$/src/components/AutoFocusInput.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/components/CommentInput.js" />
@@ -120,17 +129,15 @@
         <option value="$PROJECT_DIR$/src/components/CommentApp.js" />
         <option value="$PROJECT_DIR$/src/components/Comment.js" />
         <option value="$PROJECT_DIR$/src/components/HigherOrderComponent.js" />
-        <option value="$PROJECT_DIR$/src/higherOrderComponents/wrapWithAjaxData.js" />
-        <option value="$PROJECT_DIR$/src/components/Clock.js" />
-        <option value="$PROJECT_DIR$/src/react-context.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/react-redux-demo/ThemeSwitch.js" />
         <option value="$PROJECT_DIR$/src/react-redux-demo/react-redux.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/react-redux-demo/connect.js" />
         <option value="$PROJECT_DIR$/src/react-redux-demo/Header.js" />
         <option value="$PROJECT_DIR$/src/react-redux-demo/Content.js" />
         <option value="$PROJECT_DIR$/src/demo.js" />
+=======
+>>>>>>> 6eff0262a8042183f3c961b253c1c3b62e9b329a
       </list>
     </option>
   </component>
@@ -147,8 +154,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="840" />
+    <option name="width" value="1280" />
+    <option name="height" value="730" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -222,14 +229,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,10 +252,6 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/higherOrderComponents" />
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -348,6 +355,7 @@
       <workItem from="1491909131281" duration="1843000" />
       <workItem from="1491919740862" duration="77000" />
       <workItem from="1491919825573" duration="1917000" />
+<<<<<<< HEAD
       <workItem from="1491969212939" duration="850000" />
       <workItem from="1492007259636" duration="1385000" />
       <workItem from="1492046620332" duration="23000" />
@@ -356,11 +364,20 @@
       <workItem from="1492516161405" duration="5755000" />
       <workItem from="1492600760041" duration="5779000" />
       <workItem from="1492760859515" duration="17000" />
+=======
+      <workItem from="1491969212939" duration="1894000" />
+      <workItem from="1492442289858" duration="138000" />
+      <workItem from="1492442451766" duration="2026000" />
+>>>>>>> 6eff0262a8042183f3c961b253c1c3b62e9b329a
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="29540000" />
+=======
+    <option name="totallyTimeSpent" value="18399000" />
+>>>>>>> 6eff0262a8042183f3c961b253c1c3b62e9b329a
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -372,19 +389,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="840" extended-state="6" />
+    <frame x="0" y="22" width="1280" height="730" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23819591" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15091342" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3275401" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> 6eff0262a8042183f3c961b253c1c3b62e9b329a
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -404,6 +426,7 @@
     <breakpoint-manager />
     <watches-manager />
   </component>
+<<<<<<< HEAD
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/CommentList.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -774,4 +797,6 @@
       </provider>
     </entry>
   </component>
+=======
+>>>>>>> 6eff0262a8042183f3c961b253c1c3b62e9b329a
 </project>
