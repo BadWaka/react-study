@@ -3,7 +3,7 @@
  */
 import React, {Component, PropTypes} from 'react'
 import ThemeSwitch from './ThemeSwitch'
-import {connect} from './react-redux';
+import {connect} from 'react-redux';
 
 class Content extends Component {
 
