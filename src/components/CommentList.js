@@ -10,30 +10,36 @@ export default class CommentList extends Component {
 
     static propTypes = {
         comments: PropTypes.array,
-        onDeleteComment: PropTypes.func,
+        onDeleteComment: PropTypes.func
     };
 
     static defaultProps = {
-        comments: [],
+        comments: []
     };
 
     handleDeleteComment(index) {
         if (this.props.onDeleteComment) {
-            this.props.onDeleteComment(index);
+            this
+                .props
+                .onDeleteComment(index);
         }
     }
 
     render() {
         return (
             <div>
-                {this.props.comments.map((comment, i) => {
-                    return (
-                        <Comment key={i}
-                                 comment={comment}
-                                 index={i}
-                                 onDeleteComment={this.handleDeleteComment.bind(this)}/>
-                    );
-                })}
+                {this
+                    .props
+                    .comments
+                    .map((comment, i) => {
+                        return (<Comment
+                            key={i}
+                            comment={comment}
+                            index={i}
+                            onDeleteComment={this
+                            .handleDeleteComment
+                            .bind(this)}/>);
+                    })}
             </div>
         );
     }
